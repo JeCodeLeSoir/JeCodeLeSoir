@@ -1,0 +1,173 @@
+@media only screen and (max-width: 600px) {
+  #GalleryImage .preview {
+    background-color: #000;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    width: 80vw;
+    height: 60vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  #GalleryImage .preview img {
+
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+  }
+
+  #GalleryImage .grid {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  #GalleryImage .preview {
+    /*background-color: #d72f2f;*/
+    margin-bottom: 10px;
+    padding: 25px;
+
+    width: 80vw;
+    height: 50vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  #GalleryImage .preview img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-width: 95%;
+    max-height: 95%;
+
+  }
+
+  #GalleryImage .grid {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #GalleryImage .preview {
+    /*background-color: #06b122;*/
+    margin-bottom: 10px;
+    padding: 10px;
+
+    width: 70vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #GalleryImage .preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+  }
+
+  #GalleryImage .grid {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #GalleryImage .grid {
+    width: 40%;
+    height: 200px;
+  }
+
+  #GalleryImage .preview {
+    /*background-color: #9a1f7f;*/
+    margin-bottom: 10px;
+    padding: 10px;
+
+    width: 80vw;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #GalleryImage .preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+  }
+}
+
+#GalleryImage {
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#GalleryImage .preview img {}
+
+#GalleryImage .grid {
+
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  overflow-x: scroll;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+/* scoll bar */
+#GalleryImage .grid::-webkit-scrollbar {
+  background-color: #000;
+
+  height: 10px;
+}
+
+#GalleryImage .grid::-webkit-scrollbar-thumb {
+  background-color: #3199a2;
+}
+
+
+#GalleryImage .grid li a img {
+  display: block;
+  user-select: none;
+
+  width: 200px;
+  height: 120px;
+
+  object-fit: cover;
+  object-position: center;
+
+  margin: 10px;
+}
+
+#GalleryImage .grid li .Select {
+  border: 2px solid #3199a2;
+  padding: 5px;
+}
